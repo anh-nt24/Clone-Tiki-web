@@ -1,0 +1,42 @@
+:root {
+    --main-color: rgb(26, 148, 255);
+    --background-color: rgb(245,245,250);
+    --sub-color: #ff1a00b3;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1240px;
+    max-width: 100%;
+    margin: 16px;
+}
+
+.grid__full-width {
+    width: 1400px;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__column-6 {
+    width: calc(100%/6);
+    margin-top: 5px;
+    display: none;
+}
+
+.grid__column-5 {
+    width: calc(100%/5);
+}

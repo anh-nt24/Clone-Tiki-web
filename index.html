@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tiki - Mua hàng online giá tốt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+
+    <!-- WEB -->
+    <body>
+        <div class="main">
+            <!-- Header -->
+            <div class="main-header">
+                <!-- UPPER HEADER -->
+                <div class="main-header__upper-header grid">
+                    <a href="#" class="upper-header__tiki-logo">
+                        <img src="./assets/img/tiki-logo.png" alt="tiki-logo" style="width: 60px">
+                    </a>
+
+                    <div class="upper-header__search">
+                        <input class="input-search" type="text" placeholder="Find the desired product, category or brand you want...">
+                        <button class="search-btn cursor">
+                            <img src="./assets/img/search.png" alt="search" style="width: 22px">
+                            Search
+                        </button>
+                    </div>
+
+                    <!-- Search history -->
+                    <div class="search-history">
+                        <div class="search-history__main">
+                            <a href="#" class="search-history__main__item-promo">
+                                <h3>Hot deals from Abbott</h3>
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/itempromo.webp">
+                                    <img src="./assets/img/itempromo.webp" alt="">
+                                </picture>
+                            </a>
+                            
+                                <input type="checkbox" id="btnbox">
+                                <ul class="history-list">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/history.png" class="history-icon" style="width: 35px"></img>
+                                            <p class="history-product">coding with javascript for dummies <i class="fa-solid fa-xmark"></i> </p>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/history.png" class="history-icon" style="width: 35px"></img>
+                                            <p class="history-product">cooking oil <i class="fa-solid fa-xmark"></i> </p>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/history.png" class="history-icon" style="width: 35px"></img>
+                                            <p class="history-product">algorithm to live by <i class="fa-solid fa-xmark"></i> </p>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/history.png" class="history-icon" style="width: 35px"></img>
+                                            <p class="history-product">little stories <i class="fa-solid fa-xmark"></i> </p>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/search-suggestion-icon.png" class="history-icon" style="width: 35px"></img>
+                                            <p class="history-product">Bluetooth headphone <i class="fa-solid fa-xmark"></i> </p>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/img/search-suggestion-icon.png" class="history-icon" style="width: 35px"></img>
+                                            <p class="history-product">Iphone 13 <i class="fa-solid fa-xmark"></i> </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <label for="btnbox" class="button">
+                                    <span class="more">See more <i class="fa-solid fa-angle-down"></i></span>
+                                    <span class="less">See less <i class="fa-solid fa-angle-up"></i></span>
+                                </label>
+
+                            
+
+                            <div class="popular-searches">
+                                <div class="popular-searches__header">
+                                    <img src="./assets/img/popular-search.png" style="width: 30px">
+                                    <h3>Popular searches</h3>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./assets/img/ielts_vocabulary.jpg" style="width: 40px">
+                                        <p> ielts vocabulary </p>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./assets/img/negotiate.jpg" style="width: 40px">
+                                        <p> negotiate </p>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./assets/img/dummies.jpg" style="width: 40px">
+                                        <p> dummies </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="./assets/img/vegetableoil.jpg" style="width: 40px">
+                                        <p> vegetable oil </p>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./assets/img/introduction_to_algorithm.jpg" style="width: 40px">
+                                        <p> introduction to algorithm</p>
+                                    </div>
+                                    <div class="column">
+                                        <img src="./assets/img/thedeathofexpert.jpeg" style="width: 40px">
+                                        <p> the death of expertise </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACCOUNT -->
+                    <div class="upper-header__user-acc cursor">
+                        <img class="user-acc__avt" src="./assets/img/avatar.jpg" alt="account" class="user-acc__img">
+                        <span class="user-acc__log">
+                            <span>Log In | Sign Up</span>  <!--class="open" to display Log In | Sign Up-->
+                            <span id="user-acc-name">The Anh<i class="fa-solid fa-angle-down"></i></span>
+                        </span>
+
+                        <ul class="user-acc__menu">
+                            <li>My account</li>
+                            <li>My order</li>
+                            <li>My notification</li>
+                            <li>Log out</li>
+                        </ul>
+
+                        <!-- Log in or Sign in form -->
+                        <div class="user-acc__log-form">
+                            <div class="user-acc__log-form__main js-container">
+                                <div class="log-form__left-side">
+                                    <div class="log-form__left-side__upper">
+                                        <h3>Hello,</h3>
+                                        <h4>Log in or create an account</h4>
+                                        <input type="text" placeholder="Phone number">
+                                        <button>Continue</button>
+                                    </div>
+    
+                                    <div class="log-form__left-side__below">
+                                        <p class="continue-with"><span>Or continue with</span></p>
+                                        <div class="left-side__below__logo">
+                                            <a href="#"><img src="./assets/img/facebook.png" alt="facebook-logo"></a>
+                                            <a href="#"><img src="./assets/img/google.png" alt="gmail-logo"></a>    
+                                        </div>
+                                        <p>By continuing, you have accepted <a href="#">terms of use</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="log-form__right-side">
+                                    <img src="./assets/img/tiki_introduction.png" alt="tiki-introduction">
+                                    <div class="log-form__right-side__content">
+                                        <h4>Shopping at Tiki</h4>
+                                        <h5>Super deals every day</h5>
+                                    </div>
+                                </div>
+                                <button class="log-form__close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- CART -->
+                    <div class="upper-header__cart cursor">
+                        <img src="./assets/img/cart.png" alt="cart" style="width: 30px; height: 30px">
+                        Cart
+                        <div class="number-items">4</div>
+                        
+                        <!-- Cart page -->
+                        <div class="cart-list">
+                            <!-- No product class: "cart-list--no-products" -->
+                            <!-- With product(s) class: cart-list--has-products -->
+                            <div class="cart-list__main">
+                                <div class="cart-list--no-products">
+                                    <img class="cart-list__main-img" src="./assets/img/cart_no_product.png" alt="">
+                                    <span class="cart-list__main-msg">There is no products in your cart!</span>
+                                </div>
+                            
+                                <!-- Has product(s) -->
+                                <div class="cart-list--has-products">
+                                    <h4 class="cart-list__main-header">Added products</h4>
+                                    <ul class="cart-list__main-list-items">
+                                        <li class="cart-list__main-item">
+                                            <img src="./assets/img/vegetableoil.jpg" alt="" class="cart-list__main-item-img">
+                                            <div class="cart-list__main-item-info">
+                                                <div class="main-item-info__heading">
+                                                    <h5 class="main-item-info__heading__name">Neptune Light Premium Cooking Oil 1 Litre</h5>
+                                                    <span class="main-item-info__heading__price">$1.03</span>
+                                                </div>
+    
+                                                <div class="main-item-info__other-info">
+                                                    <div class="other-info__quantity-info">
+                                                        <p class="other-info__quantity">Quantity</p>
+                                                        <div class="other-infor__quantity-box">
+                                                            <button class="other-info__quantity-info-minus">-</button>
+                                                            <p class="other-info__quantity-info-box">1</p>
+                                                            <button class="other-info__quantity-info-plus">+</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="other-info__remove-item">Remove</button>
+                                                </div>
+    
+                                            </div>
+                                        </li>
+
+                                        <li class="cart-list__main-item">
+                                            <img src="./assets/img/thedeathofexpert.jpeg" alt="" class="cart-list__main-item-img">
+                                            <div class="cart-list__main-item-info">
+                                                <div class="main-item-info__heading">
+                                                    <h5 class="main-item-info__heading__name">The Death Of Expertise - Tom Nichols</h5>
+                                                    <span class="main-item-info__heading__price">$15.95</span>
+                                                </div>
+    
+                                                <div class="main-item-info__other-info">
+                                                    <div class="other-info__quantity-info">
+                                                        <p class="other-info__quantity">Quantity</p>
+                                                        <div class="other-infor__quantity-box">
+                                                            <button class="other-info__quantity-info-minus">-</button>
+                                                            <p class="other-info__quantity-info-box">1</p>
+                                                            <button class="other-info__quantity-info-plus">+</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="other-info__remove-item">Remove</button>
+                                                </div>
+    
+                                            </div>
+                                        </li>
+
+                                        <li class="cart-list__main-item">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/25/637864946617759009_iphone-13-den-1.jpg" alt="" class="cart-list__main-item-img">
+                                            <div class="cart-list__main-item-info">
+                                                <div class="main-item-info__heading">
+                                                    <h5 class="main-item-info__heading__name">iPhone 13 128GB</h5>
+                                                    <span class="main-item-info__heading__price">$68.90</span>
+                                                </div>
+    
+                                                <div class="main-item-info__other-info">
+                                                    <div class="other-info__quantity-info">
+                                                        <p class="other-info__quantity">Quantity</p>
+                                                        <div class="other-infor__quantity-box">
+                                                            <button class="other-info__quantity-info-minus">-</button>
+                                                            <p class="other-info__quantity-info-box">1</p>
+                                                            <button class="other-info__quantity-info-plus">+</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="other-info__remove-item">Remove</button>
+                                                </div>
+    
+                                            </div>
+                                        </li>
+
+                                        <li class="cart-list__main-item">
+                                            <img src="./assets/img/facial_cleanser.webp" alt="" class="cart-list__main-item-img">
+                                            <div class="cart-list__main-item-info">
+                                                <div class="main-item-info__heading">
+                                                    <h5 class="main-item-info__heading__name">Facial Cleasing Brush</h5>
+                                                    <span class="main-item-info__heading__price">$39.00</span>
+                                                </div>
+    
+                                                <div class="main-item-info__other-info">
+                                                    <div class="other-info__quantity-info">
+                                                        <p class="other-info__quantity">Quantity</p>
+                                                        <div class="other-infor__quantity-box">
+                                                            <button class="other-info__quantity-info-minus">-</button>
+                                                            <p class="other-info__quantity-info-box">1</p>
+                                                            <button class="other-info__quantity-info-plus">+</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="other-info__remove-item">Remove</button>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#" class="cart-list__main-header__more-details">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- LOWER HEADER -->
+                <div class="main-header__lower-header grid">
+                    <!-- Tiki freshipping logo -->
+                    <div class="lower-header__freeship-logo">
+                        <a href="#"><img src="./assets/img/freeship.png" alt="freeship-logo" style="width: 80px">
+                        </a>
+                    </div>
+
+                    <!-- Necessaries -->
+                    <ul class="lower-header__list-item">
+                        <li><a href="#">fruit</a></li>
+                        <li><a href="#">meat, eggs</a></li>
+                        <li><a href="#">vegetable</a></li>
+                        <li><a href="#">milk, butter, cheese</a></li>
+                        <li><a href="#">seafood</a></li>
+                        <li><a href="#">rice, instant noodles</a></li>
+                        <li><a href="#">drinks, alcohol</a></li>
+                        <li><a href="#">confectionery</a></li>
+                    </ul>
+
+                    <!-- Selling with Tiki -->
+                    <a href="#" class="lower-header__seller cursor">
+                        <img src="./assets/img/seller.svg" alt="seller-icon"> 
+                        Selling with Tiki
+                    </a>
+                </div>
+            </div>
+
+            <!-- Container -->
+            <div class="container">
+                <!-- Slider -->
+                <div class="container__slider">
+                    <div class="slider__slides">
+
+                        <!-- Prev-Next Navigation -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+    
+                        <!-- Dot Navigation -->
+                        <input type="radio" name="ratio-btn" id="rd1">
+                        <input type="radio" name="ratio-btn" id="rd2">
+                        <input type="radio" name="ratio-btn" id="rd3">
+                        <input type="radio" name="ratio-btn" id="rd4">
+
+
+                        <!-- Slide images -->
+                        <a href="#" class="slide first">
+                            <img src="./assets/img/slider1.webp">
+                        </a>
+
+                        <a href="#" class="slide">
+                            <img src="./assets/img/slider2.webp">
+                        </a>
+
+                        <a href="#" class="slide">
+                            <img src="./assets/img/slider3.webp">
+                        </a>
+
+                        <a href="#" class="slide">
+                            <img src="./assets/img/slider4.webp">
+                        </a>
+                        
+                    </div>
+
+                    <!-- Manual Navigation -->
+                    <div class="manual-nav">
+                        <label for="rd1" class="manual"></label>
+                        <label for="rd2" class="manual"></label>
+                        <label for="rd3" class="manual"></label>
+                        <label for="rd4" class="manual"></label>
+                    </div>
+
+                    
+                </div>
+                <!-- Home Brand -->
+                <div class="container__home-brand grid">
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/left-homebrand.webp">
+                            <img src="./assets/img/left-homebrand.webp" alt="">
+                        </picture>
+                    </a>
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/center-homebrand.webp">
+                            <img style="width: 860px" src="./assets/img/center-homebrand.webp" alt="">
+                        </picture>
+                    </a>
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/right-homebrand.webp">
+                            <img src="./assets/img/right-homebrand.webp" alt="">
+                        </picture>
+                    </a>
+                </div>
+
+                <!-- Items List -->
+                <div class="container__item-list container--customize grid">
+                    <a class="item-list__1" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/profitable.gif">
+                            <img style="width:48px; height: 48px;" src="./assets/img/profitable.gif" alt="">
+                        </picture>
+                        <span>Profitable shopping</span>
+                    </a>
+
+                    <a class="item-list__2" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/sale.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/sale.webp" alt="">
+                        </picture>
+                        <span>Super sale 7.7</span>
+                    </a>
+                    <a class="item-list__3" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/market_superfast.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/market_superfast.webp" alt="">
+                        </picture>
+                        <span>Go to the market super fast</span>
+                    </a>
+                    <a class="item-list__4" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/paymoney.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/paymoney.webp" alt="">
+                        </picture>
+                        <span>Pay money, top up card</span>
+                    </a>
+                    <a class="item-list__5" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/buyandsell.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/buyandsell.webp" alt="">
+                        </picture>
+                        <span>Buy and sell ASA/CNY</span>
+                    </a>
+                    <a class="item-list__6" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/discount.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/discount.webp" alt="">
+                        </picture>
+                        <span>Discount code</span>
+                    </a>
+                    <a class="item-list__7" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/tiki360.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/tiki360.webp" alt="">
+                        </picture>
+                        <span>Insurance Tiki360</span>
+                    </a>
+                    <a class="item-list__8" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/upto50.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/upto50.webp" alt="">
+                        </picture>
+                        <span>Up to 50% off</span>
+                    </a>
+                    <a class="item-list__9" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/cashback.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/cashback.webp" alt="">
+                        </picture>
+                        <span>15% Cashback</span>
+                    </a>
+                    <a class="item-list__10" href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/paymentoffer.webp">
+                            <img style="width:48px; height: 48px;" src="./assets/img/paymentoffer.webp" alt="">
+                        </picture>
+                        <span>Payment offer</span>
+                    </a>
+                </div>
+
+                <!-- Home Banner -->
+                <div class="container__banner grid">
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/banner1.webp">
+                            <img src="./assets/img/banner1.webp" alt="">
+                        </picture>
+                    </a>
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/banner2.webp">
+                            <img src="./assets/img/banner2.webp" alt="">
+                        </picture>
+                    </a>
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/banner3.webp">
+                            <img src="./assets/img/banner3.webp" alt="">
+                        </picture>
+                    </a>
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" src="./assets/img/banner4.webp">
+                            <img src="./assets/img/banner4.webp" alt="">
+                        </picture>
+                    </a>
+                </div>
+
+                <!-- Products -->
+                <div class="container__products grid">
+                    <!-- Rule for grid column layout: grid -> row -> column -->
+                    <!-- Header -->
+                    <div class="products__header">
+                        <h3>Today's Suggestions</h3>
+                        <div class="header__suggestions">
+                            <a href="#" class="header__suggestion-tag header__suggestions--tag-selected">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/foryou.webp">
+                                    <img src="./assets/img/foryou.webp" alt="">
+                                </picture>
+                                <span>For you</span>
+                            </a>
+                            <a href="#" class="header__suggestion-tag">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/flashvoucher.webp">
+                                    <img src="./assets/img/flashvoucher.webp" alt="">
+                                </picture>
+                                <span>Flash Voucher 300K CZK</span>
+                            </a>
+                            <a href="#" class="header__suggestion-tag">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/hotdeal.webp">
+                                    <img src="./assets/img/hotdeal.webp" alt="">
+                                </picture>
+                                <span>Super hot deal</span>
+                            </a>
+                            <a href="#" class="header__suggestion-tag">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/verycheap.webp">
+                                    <img src="./assets/img/verycheap.webp" alt="">
+                                </picture>
+                                <span>Incredibly cheap</span>
+                            </a>
+                            <a href="#" class="header__suggestion-tag">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/newproducts.webp">
+                                    <img src="./assets/img/newproducts.webp" alt="">
+                                </picture>
+                                <span>New products</span>
+                            </a>
+                            <a href="#" class="header__suggestion-tag">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/fashiontrends.webp">
+                                    <img src="./assets/img/fashiontrends.webp" alt="">
+                                </picture>
+                                <span>Fashion trends</span>
+                            </a>
+                            <a href="#" class="header__suggestion-tag">
+                                <picture>
+                                    <source type="image/webp" src="./assets/img/trending.webp">
+                                    <img src="./assets/img/trending.webp" alt="">
+                                </picture>
+                                <span>Trending</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Home Product -->
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <!-- Products -->
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/macbookair.webp);"></div>
+                                    <h4 class="home-product__item__name">Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">12K</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$899.99</span>
+                                        <div class="home-product__item__price-discount"> - 54%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/setduvet.webp);"></div>
+                                    <h4 class="home-product__item__name">Hot Products Customized Size And Logo Luxury Bedding Sheets Duvet Cover Set For Children</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">551</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$11.70</span>
+                                        <div class="home-product__item__price-discount"> - 48%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/transparent-glass.webp);"></div>
+                                    <h4 class="home-product__item__name">Transparent Glasses Novelty Square Liquor Bottle Vodka Brandy Whiskey Decanter</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">1000</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$4.90</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/clothes.webp);"></div>
+                                    <h4 class="home-product__item__name">Men's ABC Camo Fill Wordmark Short Plain T-Shirt</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">23</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$1.20</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/libbymix.jpg);"></div>
+                                    <h4 class="home-product__item__name">Libby's Mixed Vegetables, 15-Ounce Cans</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">0</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$8.13</span>
+                                        <div class="home-product__item__price-discount"> - 10%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/perfume.jpg);"></div>
+                                    <h4 class="home-product__item__name">SWISS ARABIAN Layali - Luxury Products From Dubai - Long Lasting And Addictive Personal Perfume Oil Fragrance - A Seductive, High Quality Signature Aroma - The Luxurious Scent Of Arabia - 0.5 Oz</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">6073</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$48.00</span>
+                                        <div class="home-product__item__price-discount"> - 11%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/macbookair.webp);"></div>
+                                    <h4 class="home-product__item__name">Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">12K</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$899.99</span>
+                                        <div class="home-product__item__price-discount"> - 54%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/setduvet.webp);"></div>
+                                    <h4 class="home-product__item__name">Hot Products Customized Size And Logo Luxury Bedding Sheets Duvet Cover Set For Children</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">5051</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$20.23</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/transparent-glass.webp);"></div>
+                                    <h4 class="home-product__item__name">Transparent Glasses Novelty Square Liquor Bottle Vodka Brandy Whiskey Decanter</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">1000</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$4.90</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/clothes.webp);"></div>
+                                    <h4 class="home-product__item__name">Men's ABC Camo Fill Wordmark Short Plain T-Shirt</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">23</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$1.20</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/libbymix.jpg);"></div>
+                                    <h4 class="home-product__item__name">Libby's Mixed Vegetables, 15-Ounce Cans</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">0</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$28.13</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/perfume.jpg);"></div>
+                                    <h4 class="home-product__item__name">SWISS ARABIAN Layali - Luxury Products From Dubai - Long Lasting And Addictive Personal Perfume Oil Fragrance - A Seductive, High Quality Signature Aroma - The Luxurious Scent Of Arabia - 0.5 Oz</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">6073</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$48.00</span>
+                                        <div class="home-product__item__price-discount"> - 11%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/perfume.jpg);"></div>
+                                    <h4 class="home-product__item__name">SWISS ARABIAN Layali - Luxury Products From Dubai - Long Lasting And Addictive Personal Perfume Oil Fragrance - A Seductive, High Quality Signature Aroma - The Luxurious Scent Of Arabia - 0.5 Oz</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">6073</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$48.00</span>
+                                        <div class="home-product__item__price-discount"> - 11%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/macbookair.webp);"></div>
+                                    <h4 class="home-product__item__name">Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">12K</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$899.99</span>
+                                        <div class="home-product__item__price-discount"> - 54%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/clothes.webp);"></div>
+                                    <h4 class="home-product__item__name">Men's ABC Camo Fill Wordmark Short Plain T-Shirt</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">0</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$1.00</span>
+                                        <div class="home-product__item__price-discount"> - 4%</div>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/macbookair.webp);"></div>
+                                    <h4 class="home-product__item__name">Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">4114</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$1386.00</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/setduvet.webp);"></div>
+                                    <h4 class="home-product__item__name">Hot Products Customized Size And Logo Luxury Bedding Sheets Duvet Cover Set For Children</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">5051</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$20.23</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/setduvet.webp);"></div>
+                                    <h4 class="home-product__item__name">Hot Products Customized Size And Logo Luxury Bedding Sheets Duvet Cover Set For Children</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">5051</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$20.23</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__column-6">
+                                <div class="home-product__item">
+                                    <div class="home-product__item__img" style="background-image: url(./assets/img/setduvet.webp);"></div>
+                                    <h4 class="home-product__item__name">Hot Products Customized Size And Logo Luxury Bedding Sheets Duvet Cover Set For Children</h4>
+                                    <div class="home-product__item__rating">
+                                        <!--  home-product__item__favorite--liked -->
+                                        <div class="home-product__item__favorite">
+                                            <i class="home-product__item__favorite-unlike far fa-heart"></i>
+                                            <i class="home-product__item__favorite-like fas fa-heart"></i>
+                                        </div>
+                                        <div class="home-product__item__rating-stars">
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                            <i class="fa-solid fa-star rating-star--checked"></i>
+                                        </div>
+                                        <span class="home-product__item__sold">Sold <p class="home-product__item__sold-number">5051</p> </span>
+                                    </div>
+                                    <div class="home-product__item__price">
+                                        <span class="home-product__item__selling-price">$20.23</span>
+                                    </div>
+                                    
+                                    <div class="home-product__item__popular">
+                                        <i class="fas fa-check"></i>
+                                        <span>Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Load more button -->
+                        <a href="#" id="loadmore">Load More</a>
+
+                    </div>
+                </div>
+            </div>
+
+ 
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer__tiki-information">
+                    <div class="grid__column-5">
+                        <h3 class="information-title">Customer support</h3>
+                        <ul class="information-content">
+                            <li>Hotline: <a href="tel:1900-6035"><span style="font-weight: bold; color: #000">1900-6035</span></a> <br> (1000 VND per minute, 8-21 hour including Saturday and Sunday)</li>
+                            <li><a href="#">Rrequently asked questions</a></li>
+                            <li><a href="#">Submit a support request</a></li>
+                            <li><a href="#">Ordering guide</a></li>
+                            <li><a href="#">Shipping method</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Installment instructions</a></li>
+                            <li><a href="#">Import policy</a></li>
+                            <li><a href="#">Customer support: hotro@tiki.vn</a></li>
+                            <li><a href="#">Report security error: security@tiki.vn</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-5">
+                        <h3 class="information-title">About Tiki</h3>
+                        <ul class="information-content">
+                            <li><a href="#">About Tiki</a></li>
+                            <li><a href="#">Recruit</a></li>
+                            <li><a href="#">Payment privacy policy</a></li>
+                            <li><a href="#">Privacy policy of personal information</a></li>
+                            <li><a href="#">Complaint handling policy</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">About Tiki coins</a></li>
+                            <li><a href="#">SEP - Profitable shopping</a></li>
+                            <li><a href="#">Affiliate marketing with Tiki</a></li>
+                            <li><a href="#">Business sales</a></li>
+                            <li><a href="#">Shipping terms</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-5">
+                        <h3 class="information-title">Cooperation and association</h3>
+                        <ul class="information-content">
+                            <li><a href="#">Regulation on operation of E-Commerce Exchange</a></li>
+                            <li><a href="#">Selling with Tiki</a></li>
+                        </ul>
+
+                        <h3 class="information-title">Certified by</h3>
+                        <ul class="information-content" style="display: flex">
+                            <li style="margin-right: 15px"><a href="#"><img src="./assets/img/bo-cong-thuong-2.png" alt="" style="width: 35px"></a></li>
+                            <li><a href="#"><img src="./assets/img/bo-cong-thuong.svg" alt="" style="width: 100px"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-5">
+                        <h3 class="information-title">Payment methods</h3>
+                        <ul class="information-content">
+                            <li class="information-content__payment-method" style="background-image: url(./assets/img/payment_methods.png)"></li>
+                        </ul>
+
+                        <h3 class="information-title">Delivery service</h3>
+                        <ul class="information-content">
+                            <li><a href="#"><img style="width: 90px" src="./assets/img/tikinow.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-5">
+                        <h3 class="information-title">Connect with us</h3>
+                        <ul class="information-content" style="display: flex">
+                            <li><a href="#"><img style="width: 35px; margin-right: 15px" src="./assets/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img style="width: 35px; margin-right: 15px" src="./assets/img/youtube.png" alt=""></a></li>
+                            <li><a href="#"><img style="width: 35px; border-radius: 40%" src="./assets/img/zalo.jpg" alt=""></a></li>
+                        </ul>
+
+                        <h3 class="information-title">Download Tiki on your phone</h3>
+                        <div class="information-content" style="display: flex">
+                            <img style="width: 95px" src="./assets/img/qrcode.png" alt="" class="information-content-QR">
+                            <div class="information-content-apps">
+                                <img src="./assets/img/appstore.png" alt="" class="appstore">
+                                <img src="./assets/img/playstore.png" alt="" class="googleplay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__tiki-address">
+                    <p>Head office: Viettle building, 285, Cach Mang Thang 8 Street, Ward 12, District 10, Ho Chi Minh City</p>
+                    <p>Tiki accepts online orders and delivers to the place, does not support buying and receiving goods directly at the office or order processing center</p>
+                    <p>Business Registration Certificate No. 0309532909 issued by the Department of Planning and Investment of Ho Chi Minh City for the first time on January 6, 2010 and revised for the 23rd time on February 14, 2022</p>
+                    <p>&copy 2022 - Copyright by Ti Ki Co., Ltd</p>
+                </div>
+
+                <div class="footer__tiki-introduction">
+                    <h3 class="information-title">Tiki - So fast, So quality, So cheap</h3>
+                    <h4 class="tiki-introduction__subtitle">Tiki has it all</h4>
+                    <p>With millions of products from reputable brands and stores, thousands of items ranging from Smartphones to Fresh Vegetables and Fruits , with fast delivery service TikiNOW, Tiki brings you a shopping experience. online starts with credit. In addition, at Tiki you can easily use countless other utilities such as buying scratch cards, paying electricity and water bills, insurance services.</p>
+                    <h4 class="tiki-introduction__subtitle">Full of promotions and offers</h4>
+                    <p>You want to hunt for a shocking price, Tiki has a shocking price every day for you! You are a fan of brands, genuine Official stores are waiting for you. No need to hunt for freeship codes, because Tiki already has millions of products in the Freeship+ program , unlimited bookings, saving your precious time. Buy more TikiNOW savings packages to receive 100% free shipping 2h & same day, or buy premium TikiNOW packages to receive 100% freeship, applicable to 100% products, 100% provinces in Vietnam. Want to save even more? Already have TikiCARD, Tiki credit card refund 15% on all transactions (maximum refund 600k/month).</p>
+                </div>
+            </div>
+        </div>
+    </body>    
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+</html>

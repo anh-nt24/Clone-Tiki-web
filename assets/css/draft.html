@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <style>
+        .sticky-div {
+            background-color: green;
+            position: sticky;
+            top: 0px;
+            padding: 10px 0px;
+        }
+         
+        .start {
+            display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+            /* height: 100px; */
+        }
+         
+        .end {
+            /* height: 500px; */
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1 style="color: green">
+        GeeksforGeeks
+    </h1>
+    <h3>Sticky Element</h3>
+    <b>
+        How to make a div stick
+        to the top of the screen once
+        it’s been scrolled to?
+    </b>
+    <p class="start">
+         A Computer Science portal for geeks.
+         It contains well written, well thought
+         and well explained computer science and
+         programming articles, quizzes and
+         practice/competitive programming/company
+         interview Questions.
+     </p>
+ 
+ 
+    <div class="sticky-div">
+        This is div will stick to the top
+        when it has been scrolled past
+    </div>
+    <p class="end">
+        A Computer Science portal for geeks.
+        It contains well written, well thought
+        and well explained computer science and
+        programming articles, quizzes and
+        practice/competitive programming/company
+        interview Questions.
+    </p>
+    
+    <div class="footer" style="height: 1000px"></div>
+ 
+</body>
+</html>
